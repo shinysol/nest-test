@@ -4,7 +4,7 @@ import { AppService } from './app.service';
 import { AnimalsModule } from './animals/animals.module';
 
 @Module({
-  imports: [AnimalsModule],
+  imports: [AnimalsModule.forRoot()],
   controllers: [AppController],
   providers: [AppService],
 })
